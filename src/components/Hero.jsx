@@ -1,4 +1,4 @@
-import { Star, ArrowDown } from 'lucide-react'
+import { Phone, Globe, CheckCircle, Clock, DollarSign } from 'lucide-react'
 
 export default function Hero() {
   return (
@@ -10,41 +10,49 @@ export default function Hero() {
       </div>
 
       <div className="relative z-10 w-full px-4 sm:px-6 lg:pl-8 lg:pr-12 py-24 lg:py-0">
-        {/* Badge */}
+        {/* Location badge */}
         <div className="inline-flex items-center gap-2 bg-accent/10 text-accent px-4 py-1.5 rounded-full text-sm font-semibold tracking-wider uppercase mb-6">
-          <Star size={14} className="fill-accent" />
-          Australia's Best Value Expandable Homes
+          <Globe size={14} />
+          Western Australia
         </div>
 
-        {/* Tagline */}
-        <p className="text-white/60 text-sm sm:text-base font-medium tracking-wider uppercase mb-4">
-          Designed with care, built without compromise
-        </p>
-
         {/* Headline */}
-        <h1 className="font-heading text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold text-white leading-tight max-w-3xl">
-          ALB HOME
+        <h1 className="font-heading text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold text-white leading-tight max-w-4xl">
+          Modular Building &amp;
           <br />
-          <span className="gradient-text">Premium Modular</span>
-          <br />
-          Living Solutions
+          <span className="gradient-text">Housing Solutions</span>
         </h1>
 
         {/* Description */}
         <p className="text-white/60 text-base sm:text-lg max-w-xl mt-6 leading-relaxed">
-          ALB Home creates premium expandable and modular homes designed for
-          comfortable Australian living. Founded on hands-on experience in
-          modular construction, our homes are carefully refined to deliver
-          exceptional quality and value.
+          ALB Home delivers premium modular building and housing solutions across Western Australia.
+          From custom homes to complete renovations, we bring quality craftsmanship and innovative
+          design to every project.
         </p>
 
-        {/* CTA Buttons */}
+        {/* Feature badges from flyer */}
         <div className="flex flex-wrap gap-4 mt-8">
+          <div className="inline-flex items-center gap-2 bg-white/10 text-white px-4 py-2.5 rounded-lg border border-white/10">
+            <CheckCircle size={18} className="text-accent" />
+            <span className="text-sm font-medium">Australian Standard Compliance</span>
+          </div>
+          <div className="inline-flex items-center gap-2 bg-white/10 text-white px-4 py-2.5 rounded-lg border border-white/10">
+            <Clock size={18} className="text-accent" />
+            <span className="text-sm font-medium">Rapid Installation</span>
+          </div>
+          <div className="inline-flex items-center gap-2 bg-white/10 text-white px-4 py-2.5 rounded-lg border border-white/10">
+            <DollarSign size={18} className="text-accent" />
+            <span className="text-sm font-medium">Cost-Effective Solutions</span>
+          </div>
+        </div>
+
+        {/* CTA Buttons */}
+        <div className="flex flex-wrap gap-4 mt-10">
           <a
-            href="#modular-homes"
+            href="#services"
             className="inline-flex items-center gap-2 bg-accent hover:bg-accent-dark text-primary font-semibold px-8 py-3.5 rounded-lg transition-all hover:shadow-lg hover:shadow-accent/25"
           >
-            Explore Our Homes
+            Our Services
           </a>
           <a
             href="#contact"
@@ -54,28 +62,20 @@ export default function Hero() {
           </a>
         </div>
 
-        {/* Stats */}
-        <div className="grid grid-cols-3 gap-8 mt-16 max-w-lg">
-          {[
-            { value: '150+', label: 'Homes Delivered' },
-            { value: '5+', label: 'Years Experience' },
-            { value: '98%', label: 'Happy Clients' },
-          ].map((stat) => (
-            <div key={stat.label}>
-              <p className="font-heading text-2xl sm:text-3xl font-bold gradient-text">
-                {stat.value}
-              </p>
-              <p className="text-white/50 text-xs sm:text-sm mt-1">{stat.label}</p>
-            </div>
-          ))}
-        </div>
-      </div>
-
-      {/* Scroll indicator */}
-      <div className="absolute bottom-8 left-1/2 -translate-x-1/2 hidden lg:block">
-        <div className="flex flex-col items-center gap-2 text-white/30 animate-bounce">
-          <span className="text-xs tracking-widest uppercase">Scroll</span>
-          <ArrowDown size={16} />
+        {/* Contact strip */}
+        <div className="flex flex-wrap items-center gap-6 mt-12 pt-8 border-t border-white/10">
+          <a href="tel:08-6261 9255" className="flex items-center gap-2 text-white/70 hover:text-accent transition text-sm">
+            <Phone size={16} className="text-accent" />
+            08-6261 9255
+          </a>
+          <a href="tel:0452 218 881" className="flex items-center gap-2 text-white/70 hover:text-accent transition text-sm">
+            <Phone size={16} className="text-accent" />
+            0452 218 881
+          </a>
+          <a href="https://www.albhome.com.au" target="_blank" rel="noopener noreferrer" className="flex items-center gap-2 text-white/70 hover:text-accent transition text-sm">
+            <Globe size={16} className="text-accent" />
+            www.albhome.com.au
+          </a>
         </div>
       </div>
     </section>

@@ -3,26 +3,11 @@ import { Menu, X, Phone, ChevronDown, Home, Building2, Maximize2, Image, Info, M
 
 const navItems = [
   { label: 'Home', href: '#home', icon: Home },
-  {
-    label: 'Modular Homes',
-    icon: Building2,
-    children: [
-      { label: 'Expandable Homes', href: '#modular-homes' },
-      { label: 'Custom Design', href: '#modular-homes' },
-    ],
-  },
-  {
-    label: 'Expandable Homes',
-    icon: Maximize2,
-    children: [
-      { label: '20ft Models', href: '#modular-homes' },
-      { label: '30ft Models', href: '#modular-homes' },
-      { label: '40ft Models', href: '#modular-homes' },
-    ],
-  },
+  { label: 'Renovations', href: '#renovations', icon: Home },
+  { label: 'Services', href: '#services', icon: Building2 },
+  { label: 'Materials', href: '#materials', icon: Building2 },
+  { label: 'Why Us', href: '#why-us', icon: Info },
   { label: 'Gallery', href: '#gallery', icon: Image },
-  { label: 'About Us', href: '#about', icon: Info },
-  { label: 'Locations', href: '#locations', icon: MapPin },
   { label: 'Contact', href: '#contact', icon: Mail },
 ]
 

@@ -33,7 +33,7 @@ export default function Footer() {
           <div className="flex flex-col lg:flex-row items-center justify-between gap-6">
             <div>
               <h3 className="font-heading text-2xl sm:text-3xl font-bold text-primary">
-                Ready to Start Your Journey?
+                Ready to Start Your Project?
               </h3>
               <p className="text-primary/70 mt-1">
                 Get in touch with our team for a free consultation and quote.
@@ -73,7 +73,7 @@ export default function Footer() {
               </span>
             </div>
             <p className="text-white/50 text-sm leading-relaxed">
-              Premium modular and expandable homes designed for comfortable Australian living.
+              Premium modular building and housing solutions across Western Australia. Quality craftsmanship, innovative design.
             </p>
             <div className="flex gap-3 mt-5">
               <a href="#" className="w-9 h-9 rounded-lg bg-white/10 text-white/60 hover:bg-accent hover:text-primary flex items-center justify-center transition-all">
@@ -92,7 +92,7 @@ export default function Footer() {
           <div>
             <h4 className="font-heading font-bold text-white mb-4">Quick Links</h4>
             <ul className="space-y-2.5">
-              {['Home', 'Modular Homes', 'Expandable Homes', 'Gallery', 'About Us', 'Contact'].map(
+              {['Home', 'Renovations', 'Services', 'Materials', 'Why Us', 'Gallery', 'Contact'].map(
                 (link) => (
                   <li key={link}>
                     <a
@@ -111,7 +111,7 @@ export default function Footer() {
           <div>
             <h4 className="font-heading font-bold text-white mb-4">Service Areas</h4>
             <ul className="space-y-2.5">
-              {['Queensland', 'New South Wales', 'Victoria', 'South Australia'].map((loc) => (
+              {['Perth', 'Belmont', 'Western Australia'].map((loc) => (
                 <li key={loc}>
                   <a
                     href="#contact"
@@ -130,7 +130,7 @@ export default function Footer() {
             <ul className="space-y-3">
               <li className="flex items-start gap-3">
                 <MapPin size={16} className="text-accent flex-shrink-0 mt-0.5" />
-                <span className="text-white/50 text-sm">Brisbane, QLD, Australia</span>
+                <span className="text-white/50 text-sm">1 Longfellow Court, Belmont WA 6104</span>
               </li>
               <li>
                 <a href="tel:08-6261 9255" className="flex items-center gap-3 text-white/50 hover:text-accent text-sm transition">
@@ -157,7 +157,7 @@ export default function Footer() {
               &copy; {new Date().getFullYear()} ALB Home. All rights reserved.
             </p>
             <p className="text-white/30 text-xs">
-              Designed with care for Australian living
+              Designed with care for Western Australian living
             </p>
           </div>
         </div>

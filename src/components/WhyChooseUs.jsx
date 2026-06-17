@@ -1,57 +1,54 @@
-import { CheckCircle, Star, RefreshCw, Truck, Heart, MessageCircle, Award, DollarSign } from 'lucide-react'
+import { Shield, Clock, DollarSign, Wrench, Award, Headphones } from 'lucide-react'
 
 const benefits = [
   {
-    icon: RefreshCw,
-    title: 'Refined Through Experience',
-    desc: 'Every design iteration improves on the last, drawing from real-world feedback and expert knowledge.',
+    icon: Shield,
+    title: 'Australian Standards Compliance',
+    desc: 'All our work meets or exceeds Australian building standards and regulations for complete peace of mind.',
   },
   {
-    icon: Heart,
-    title: 'Uncompromising Attention to Detail',
-    desc: 'From material selection to final finishing, we maintain the highest standards at every stage.',
-  },
-  {
-    icon: Truck,
-    title: 'Fast Delivery',
-    desc: 'Our streamlined manufacturing and logistics ensure your home is delivered on time, every time.',
-  },
-  {
-    icon: Star,
-    title: 'Designed Around Real Living',
-    desc: 'Open-plan layouts, natural light, and smart storage make every home functional and beautiful.',
-  },
-  {
-    icon: MessageCircle,
-    title: 'Clear, End-to-End Support',
-    desc: 'Your dedicated project manager guides you from design to handover with transparent communication.',
-  },
-  {
-    icon: Award,
-    title: 'Realistic Timelines',
-    desc: 'We set achievable milestones and communicate openly about schedules and progress.',
+    icon: Clock,
+    title: 'Rapid Installation & Delivery',
+    desc: 'Streamlined processes and efficient project management ensure your build is completed on time, every time.',
   },
   {
     icon: DollarSign,
-    title: 'Budget-Friendly',
-    desc: 'Competitive pricing with no hidden costs. Quality living that respects your budget.',
+    title: 'Cost-Effective Solutions',
+    desc: 'Competitive pricing with transparent quotes and no hidden costs. Quality outcomes that respect your budget.',
+  },
+  {
+    icon: Wrench,
+    title: 'Quality Craftsmanship',
+    desc: 'Experienced tradespeople and premium materials deliver exceptional results that stand the test of time.',
+  },
+  {
+    icon: Award,
+    title: 'End-to-End Project Management',
+    desc: 'From initial consultation to final handover, we manage every detail so you can relax and enjoy the process.',
+  },
+  {
+    icon: Headphones,
+    title: 'Dedicated Customer Support',
+    desc: 'Clear communication throughout your project with a dedicated team ready to answer your questions.',
   },
 ]
 
 export default function WhyChooseUs() {
   return (
-    <section className="py-20 sm:py-28 bg-primary">
+    <section id="why-us" className="py-20 sm:py-28 bg-primary">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="text-center mb-16">
+        <div className="text-center mb-4">
           <span className="section-badge">
-            <Star size={14} />
-            Why ALB Home
+            <Shield size={14} />
+            Why Alb Home
           </span>
+        </div>
+        <div className="text-center mb-16">
           <h2 className="font-heading text-3xl sm:text-4xl lg:text-5xl font-bold text-white mt-4">
-            Why Choose ALB Home?
+            Why Choose Alb Home?
           </h2>
           <p className="text-white/50 max-w-2xl mx-auto mt-4 text-lg">
-            We deliver exceptional modular homes backed by experience, quality, and genuine care.
+            We deliver exceptional building solutions backed by experience, quality, and genuine care.
           </p>
         </div>
 
