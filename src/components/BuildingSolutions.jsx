@@ -1,4 +1,4 @@
-import { Building2, CookingPot, Bath, Shirt, GantChartSquare, Briefcase } from 'lucide-react'
+import { Building2, CookingPot, Bath, Shirt, GanttChartSquare, Briefcase } from 'lucide-react'
 
 const solutions = [
   {
@@ -22,7 +22,7 @@ const solutions = [
     desc: 'Functional and stylish laundry room designs with custom storage, benchtops, and efficient layout planning.',
   },
   {
-    icon: GantChartSquare,
+    icon: GanttChartSquare,
     title: 'Structural Steel',
     desc: 'High-quality structural steel fabrication and installation for residential and commercial building projects.',
   },
