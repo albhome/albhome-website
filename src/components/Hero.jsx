@@ -33,24 +33,8 @@ export default function Hero() {
           design to every project.
         </p>
 
-        {/* Feature badges from flyer */}
-        <div className="flex flex-wrap gap-4 mt-8">
-          <div className="inline-flex items-center gap-2 bg-white/10 text-white px-4 py-2.5 rounded-lg border border-white/10">
-            <CheckCircle size={18} className="text-accent" />
-            <span className="text-sm font-medium">Australian Standard Compliance</span>
-          </div>
-          <div className="inline-flex items-center gap-2 bg-white/10 text-white px-4 py-2.5 rounded-lg border border-white/10">
-            <Clock size={18} className="text-accent" />
-            <span className="text-sm font-medium">Rapid Installation</span>
-          </div>
-          <div className="inline-flex items-center gap-2 bg-white/10 text-white px-4 py-2.5 rounded-lg border border-white/10">
-            <DollarSign size={18} className="text-accent" />
-            <span className="text-sm font-medium">Cost-Effective Solutions</span>
-          </div>
-        </div>
-
-        {/* Structural options from flyer */}
-        <div className="flex flex-wrap gap-3 mt-6">
+        {/* Structural options */}
+        <div className="flex flex-wrap gap-3 mt-8">
           <div className="inline-flex items-center gap-1.5 bg-accent/15 text-accent px-3 py-1.5 rounded-md text-xs font-semibold">
             <TreePine size={14} />
             Timber Frame
@@ -62,6 +46,22 @@ export default function Hero() {
           <div className="inline-flex items-center gap-1.5 bg-accent/15 text-accent px-3 py-1.5 rounded-md text-xs font-semibold">
             <Box size={14} />
             Aluminium
+          </div>
+        </div>
+
+        {/* Feature badges */}
+        <div className="flex flex-wrap gap-4 mt-6">
+          <div className="inline-flex items-center gap-2 bg-white/10 text-white px-4 py-2.5 rounded-lg border border-white/10">
+            <CheckCircle size={18} className="text-accent" />
+            <span className="text-sm font-medium">Australian Standard Compliance</span>
+          </div>
+          <div className="inline-flex items-center gap-2 bg-white/10 text-white px-4 py-2.5 rounded-lg border border-white/10">
+            <Clock size={18} className="text-accent" />
+            <span className="text-sm font-medium">Rapid Installation</span>
+          </div>
+          <div className="inline-flex items-center gap-2 bg-white/10 text-white px-4 py-2.5 rounded-lg border border-white/10">
+            <DollarSign size={18} className="text-accent" />
+            <span className="text-sm font-medium">Cost-Effective Solutions</span>
           </div>
         </div>
 
