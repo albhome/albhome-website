@@ -41,14 +41,14 @@ export default function Footer() {
             </div>
             <div className="flex flex-wrap gap-4">
               <a
-                href="tel:1300000000"
+                href="tel:08-6261 9255"
                 className="inline-flex items-center gap-2 bg-primary text-white hover:bg-primary-light font-semibold px-6 py-3 rounded-lg transition-all"
               >
                 <Phone size={16} />
-                1300 000 000
+                08-6261 9255
               </a>
               <a
-                href="mailto:info@albhome.com.au"
+                href="mailto:service@albhome.com.au"
                 className="inline-flex items-center gap-2 bg-white text-primary hover:bg-gray-100 font-semibold px-6 py-3 rounded-lg transition-all"
               >
                 <Mail size={16} />
@@ -133,15 +133,15 @@ export default function Footer() {
                 <span className="text-white/50 text-sm">Brisbane, QLD, Australia</span>
               </li>
               <li>
-                <a href="tel:1300000000" className="flex items-center gap-3 text-white/50 hover:text-accent text-sm transition">
+                <a href="tel:08-6261 9255" className="flex items-center gap-3 text-white/50 hover:text-accent text-sm transition">
                   <Phone size={16} className="text-accent flex-shrink-0" />
-                  1300 000 000
+                  08-6261 9255
                 </a>
               </li>
               <li>
-                <a href="mailto:info@albhome.com.au" className="flex items-center gap-3 text-white/50 hover:text-accent text-sm transition">
+                <a href="mailto:service@albhome.com.au" className="flex items-center gap-3 text-white/50 hover:text-accent text-sm transition">
                   <Mail size={16} className="text-accent flex-shrink-0" />
-                  info@albhome.com.au
+                  service@albhome.com.au
                 </a>
               </li>
             </ul>

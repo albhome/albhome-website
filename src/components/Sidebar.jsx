@@ -43,7 +43,7 @@ export default function Sidebar() {
             ALB <span className="text-accent">Home</span>
           </a>
           <div className="flex items-center gap-3">
-            <a href="tel:1300000000" className="text-accent">
+            <a href="tel:08-6261 9255" className="text-accent">
               <Phone size={20} />
             </a>
             <button
@@ -191,11 +191,11 @@ export default function Sidebar() {
 
         <div className="px-6 py-4 border-t border-white/10">
           <a
-            href="tel:1300000000"
+            href="tel:08-6261 9255"
             className="flex items-center gap-2 text-accent hover:text-accent-light transition text-sm font-medium"
           >
             <Phone size={14} />
-            1300 000 000
+            08-6261 9255
           </a>
           <p className="text-xs text-text-muted mt-1">Call us today</p>
         </div>
