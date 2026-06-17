@@ -3,16 +3,16 @@ import { Phone, Globe, CheckCircle, Clock, DollarSign, TreePine, Package, Box } 
 export default function Hero() {
   return (
     <section id="home" className="relative min-h-screen flex items-center bg-black overflow-hidden">
-      {/* Background image on the right */}
-      <div className="absolute inset-0 lg:inset-auto lg:absolute lg:right-0 lg:top-0 lg:w-1/2 lg:h-full">
+      {/* Full-width background image */}
+      <div className="absolute inset-0">
         <img
           src="/hero-bg.png"
           alt="ALB Home - Modular Building Solutions"
-          className="w-full h-full object-cover opacity-20 lg:opacity-100 hero-bg-zoom"
+          className="w-full h-full object-cover opacity-30 hero-bg-zoom"
         />
       </div>
 
-      <div className="relative z-10 w-full px-4 sm:px-6 lg:pl-8 lg:pr-12 py-24 lg:py-0">
+      <div className="relative z-10 w-full max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-24 lg:py-0">
         {/* Location badge */}
         <div className="inline-flex items-center gap-2 bg-accent/10 text-accent px-4 py-1.5 rounded-full text-sm font-semibold tracking-wider uppercase mb-6">
           <Globe size={14} />
