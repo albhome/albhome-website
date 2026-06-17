@@ -1,35 +1,35 @@
-import { Building2, CookingPot, Bath, Shirt, GanttChartSquare, Briefcase } from 'lucide-react'
+import { Ruler, ShieldCheck, LayoutDashboard, Building2, CookingPot, Bath } from 'lucide-react'
 
 const solutions = [
   {
+    icon: Ruler,
+    title: 'Tailored Design',
+    desc: 'Every project begins with understanding your unique vision. Our tailored design process ensures your home reflects your lifestyle and preferences, with maximised functionality in every space.',
+  },
+  {
+    icon: ShieldCheck,
+    title: 'Quality Craftsmanship',
+    desc: 'We use premium materials and employ skilled tradespeople to deliver exceptional results. Our commitment to quality ensures your build stands the test of time.',
+  },
+  {
+    icon: LayoutDashboard,
+    title: 'Maximised Functionality',
+    desc: 'Smart design principles and thoughtful layouts ensure every square metre serves a purpose. From open-plan living to clever storage solutions, we optimise your space.',
+  },
+  {
     icon: Building2,
     title: 'Modular Housing',
-    desc: 'Fully customizable modular homes built to Australian standards. Designed for comfort, energy efficiency, and rapid on-site assembly.',
+    desc: 'Fully customisable modular homes built to Australian standards. Designed for comfort, energy efficiency, and rapid on-site assembly.',
   },
   {
     icon: CookingPot,
-    title: 'Kitchens',
-    desc: 'Premium kitchen design and installation with custom cabinetry, quality benchtops, and modern appliances for the heart of your home.',
+    title: 'Kitchens & Bathrooms',
+    desc: 'Premium kitchen and bathroom design and installation with custom cabinetry, quality benchtops, and modern fixtures for a flawless finish.',
   },
   {
     icon: Bath,
-    title: 'Bathrooms',
-    desc: 'Complete bathroom solutions including design, waterproofing, tiling, and premium fixture installation for a flawless finish.',
-  },
-  {
-    icon: Shirt,
-    title: 'Laundries',
-    desc: 'Functional and stylish laundry room designs with custom storage, benchtops, and efficient layout planning.',
-  },
-  {
-    icon: GanttChartSquare,
-    title: 'Structural Steel',
-    desc: 'High-quality structural steel fabrication and installation for residential and commercial building projects.',
-  },
-  {
-    icon: Briefcase,
-    title: 'Commercial Building',
-    desc: 'Full-service commercial construction solutions from site assessment to project delivery, meeting all regulatory requirements.',
+    title: 'Laundries & Storage',
+    desc: 'Functional and stylish laundry room designs with custom storage solutions, maximising space and efficiency throughout your home.',
   },
 ]
 
@@ -45,7 +45,7 @@ export default function BuildingSolutions() {
             Building Solutions
           </h2>
           <p className="text-gray-500 max-w-2xl mx-auto mt-4 text-lg">
-            Comprehensive modular and residential building services across Western Australia.
+            From concept to completion, we provide comprehensive project support with tailored design, quality craftsmanship, and maximised functionality.
           </p>
         </div>
 

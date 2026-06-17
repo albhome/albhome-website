@@ -4,6 +4,7 @@ import HomeRenovations from './components/HomeRenovations'
 import BuildingSolutions from './components/BuildingSolutions'
 import Materials from './components/Materials'
 import WhyChooseUs from './components/WhyChooseUs'
+import IdealFor from './components/IdealFor'
 import Gallery from './components/Gallery'
 import Footer from './components/Footer'
 import BackToTop from './components/BackToTop'
@@ -19,6 +20,7 @@ export default function App() {
         <BuildingSolutions />
         <Materials />
         <WhyChooseUs />
+        <IdealFor />
         <Gallery />
         <Footer />
       </main>

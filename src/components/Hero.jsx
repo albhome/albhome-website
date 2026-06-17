@@ -1,12 +1,17 @@
-import { Phone, Globe, CheckCircle, Clock, DollarSign } from 'lucide-react'
+import { Phone, Globe, CheckCircle, Clock, DollarSign, TreePine, Package, Box } from 'lucide-react'
 
 export default function Hero() {
   return (
     <section id="home" className="relative min-h-screen flex items-center bg-primary overflow-hidden">
-      {/* Background pattern */}
-      <div className="absolute inset-0 opacity-5">
-        <div className="absolute top-20 left-10 w-72 h-72 border border-white/20 rounded-full" />
-        <div className="absolute bottom-10 right-20 w-96 h-96 border border-white/10 rounded-full" />
+      {/* Hero background image */}
+      <div className="absolute inset-0">
+        <img
+          src="/albhome-hero.jpg"
+          alt="ALB Home - Modular Building Solutions"
+          className="w-full h-full object-cover"
+        />
+        {/* Dark overlay for readability */}
+        <div className="absolute inset-0 bg-gradient-to-r from-primary/95 via-primary/80 to-primary/70" />
       </div>
 
       <div className="relative z-10 w-full px-4 sm:px-6 lg:pl-8 lg:pr-12 py-24 lg:py-0">
@@ -43,6 +48,22 @@ export default function Hero() {
           <div className="inline-flex items-center gap-2 bg-white/10 text-white px-4 py-2.5 rounded-lg border border-white/10">
             <DollarSign size={18} className="text-accent" />
             <span className="text-sm font-medium">Cost-Effective Solutions</span>
+          </div>
+        </div>
+
+        {/* Structural options from flyer */}
+        <div className="flex flex-wrap gap-3 mt-6">
+          <div className="inline-flex items-center gap-1.5 bg-accent/15 text-accent px-3 py-1.5 rounded-md text-xs font-semibold">
+            <TreePine size={14} />
+            Timber Frame
+          </div>
+          <div className="inline-flex items-center gap-1.5 bg-accent/15 text-accent px-3 py-1.5 rounded-md text-xs font-semibold">
+            <Package size={14} />
+            Light Steel
+          </div>
+          <div className="inline-flex items-center gap-1.5 bg-accent/15 text-accent px-3 py-1.5 rounded-md text-xs font-semibold">
+            <Box size={14} />
+            Aluminium
           </div>
         </div>
 

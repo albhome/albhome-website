@@ -1,6 +1,26 @@
-import { Shield, Clock, DollarSign, Wrench, Award, Headphones } from 'lucide-react'
+import { MapPin, Wrench, ClipboardCheck, DollarSign, Shield, Clock } from 'lucide-react'
 
 const benefits = [
+  {
+    icon: MapPin,
+    title: 'Local WA Expertise',
+    desc: 'Deep understanding of Western Australian building regulations, climate considerations, and local supplier networks to deliver projects that truly work for WA living.',
+  },
+  {
+    icon: Wrench,
+    title: 'Quality Workmanship',
+    desc: 'Our skilled team delivers exceptional craftsmanship on every project, using premium materials and proven techniques that stand the test of time.',
+  },
+  {
+    icon: ClipboardCheck,
+    title: 'Dedicated Project Management',
+    desc: 'End-to-end project oversight from initial consultation to final handover. We manage every detail so you can enjoy a stress-free building experience.',
+  },
+  {
+    icon: DollarSign,
+    title: 'Fair and Reasonable Pricing',
+    desc: 'Transparent, competitive pricing with no hidden costs. We deliver outstanding value without compromising on quality or service.',
+  },
   {
     icon: Shield,
     title: 'Australian Standards Compliance',
@@ -11,26 +31,6 @@ const benefits = [
     title: 'Rapid Installation & Delivery',
     desc: 'Streamlined processes and efficient project management ensure your build is completed on time, every time.',
   },
-  {
-    icon: DollarSign,
-    title: 'Cost-Effective Solutions',
-    desc: 'Competitive pricing with transparent quotes and no hidden costs. Quality outcomes that respect your budget.',
-  },
-  {
-    icon: Wrench,
-    title: 'Quality Craftsmanship',
-    desc: 'Experienced tradespeople and premium materials deliver exceptional results that stand the test of time.',
-  },
-  {
-    icon: Award,
-    title: 'End-to-End Project Management',
-    desc: 'From initial consultation to final handover, we manage every detail so you can relax and enjoy the process.',
-  },
-  {
-    icon: Headphones,
-    title: 'Dedicated Customer Support',
-    desc: 'Clear communication throughout your project with a dedicated team ready to answer your questions.',
-  },
 ]
 
 export default function WhyChooseUs() {
@@ -40,7 +40,7 @@ export default function WhyChooseUs() {
         <div className="text-center mb-4">
           <span className="section-badge">
             <Shield size={14} />
-            Why Alb Home
+            Why Choose ALB
           </span>
         </div>
         <div className="text-center mb-16">
