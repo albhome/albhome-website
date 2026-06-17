@@ -6,12 +6,12 @@ export default function Hero() {
       {/* Hero background image */}
       <div className="absolute inset-0">
         <img
-          src="/albhome-hero.jpg"
+          src="/hero-bg.png"
           alt="ALB Home - Modular Building Solutions"
-          className="w-full h-full object-cover"
+          className="w-full h-full object-cover opacity-40 hero-bg-zoom"
         />
         {/* Dark overlay for readability */}
-        <div className="absolute inset-0 bg-gradient-to-r from-primary/95 via-primary/80 to-primary/70" />
+        <div className="absolute inset-0 bg-gradient-to-r from-primary/95 via-primary/85 to-primary/75" />
       </div>
 
       <div className="relative z-10 w-full px-4 sm:px-6 lg:pl-8 lg:pr-12 py-24 lg:py-0">
