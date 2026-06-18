@@ -1,100 +1,74 @@
-import { Phone, Globe, CheckCircle, Clock, DollarSign, TreePine, Package, Box } from 'lucide-react'
+import { Play } from 'lucide-react'
 
 export default function Hero() {
   return (
-    <section id="home" className="relative min-h-screen flex items-center bg-black overflow-hidden">
-      {/* Full-width background image */}
+    <section id="home" className="relative min-h-[90vh] flex items-center bg-black overflow-hidden">
+      {/* Background image with gradient overlay */}
       <div className="absolute inset-0">
         <img
-          src="/hero-bg.png"
+          src="/albhome-hero.jpg"
           alt="ALB Home - Modular Building Solutions"
-          className="w-full h-full object-cover opacity-30 hero-bg-zoom"
+          className="w-full h-full object-cover opacity-40 hero-bg-zoom"
+          onError={(e) => {
+            e.target.src = '/hero-bg.png'
+          }}
         />
+        <div className="absolute inset-0 bg-gradient-to-r from-black/80 via-black/60 to-transparent" />
       </div>
 
       <div className="relative z-10 w-full max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-24 lg:py-0">
-        {/* Location badge */}
-        <div className="inline-flex items-center gap-2 bg-accent/10 text-accent px-4 py-1.5 rounded-full text-sm font-semibold tracking-wider uppercase mb-6">
-          <Globe size={14} />
-          Western Australia
-        </div>
+        <div className="max-w-3xl">
+          {/* Tagline */}
+          <p className="text-accent font-heading tracking-[0.2em] text-sm uppercase mb-4">
+            Designed with care, built without compromise
+          </p>
 
-        {/* Headline */}
-        <h1 className="font-heading text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold text-white leading-tight max-w-4xl">
-          Modular Building &amp;
-          <br />
-          <span className="gradient-text">Housing Solutions</span>
-        </h1>
+          {/* Main heading - Oswald all-caps style like SnapBuild */}
+          <h1 className="font-heading text-5xl sm:text-6xl md:text-7xl lg:text-8xl font-bold text-white leading-tight uppercase">
+            ALB Home
+            <br />
+            <span className="gradient-text">Refined</span>
+            <br />
+            <span className="text-white/90">Expandable Homes</span>
+          </h1>
 
-        {/* Description */}
-        <p className="text-white/60 text-base sm:text-lg max-w-xl mt-6 leading-relaxed">
-          ALB Home delivers premium modular building and housing solutions across Western Australia.
-          From custom homes to complete renovations, we bring quality craftsmanship and innovative
-          design to every project.
-        </p>
+          {/* Description */}
+          <p className="text-white/60 text-base sm:text-lg max-w-xl mt-6 leading-relaxed">
+            ALB Home delivers premium modular building and housing solutions across Western Australia.
+            From custom homes to complete renovations, we bring quality craftsmanship and innovative
+            design to every project.
+          </p>
 
-        {/* Structural options */}
-        <div className="flex flex-wrap gap-3 mt-8">
-          <div className="inline-flex items-center gap-1.5 bg-accent/15 text-accent px-3 py-1.5 rounded-md text-xs font-semibold">
-            <TreePine size={14} />
-            Timber Frame
+          {/* CTA Buttons */}
+          <div className="flex flex-wrap gap-4 mt-10">
+            <a
+              href="#modular-homes"
+              className="inline-flex items-center gap-2 bg-accent hover:bg-accent-dark text-primary font-semibold px-8 py-3.5 rounded-lg transition-all hover:shadow-lg hover:shadow-accent/25 text-sm uppercase tracking-wider"
+            >
+              View Our Homes
+            </a>
+            <a
+              href="#contact"
+              className="inline-flex items-center gap-2 border-2 border-white/20 text-white hover:border-accent hover:text-accent px-8 py-3.5 rounded-lg transition-all text-sm uppercase tracking-wider"
+            >
+              <Play size={16} />
+              Get a Quote
+            </a>
           </div>
-          <div className="inline-flex items-center gap-1.5 bg-accent/15 text-accent px-3 py-1.5 rounded-md text-xs font-semibold">
-            <Package size={14} />
-            Light Steel
-          </div>
-          <div className="inline-flex items-center gap-1.5 bg-accent/15 text-accent px-3 py-1.5 rounded-md text-xs font-semibold">
-            <Box size={14} />
-            Aluminium
-          </div>
-        </div>
 
-        {/* Feature badges */}
-        <div className="flex flex-wrap gap-4 mt-6">
-          <div className="inline-flex items-center gap-2 bg-white/10 text-white px-4 py-2.5 rounded-lg border border-white/10">
-            <CheckCircle size={18} className="text-accent" />
-            <span className="text-sm font-medium">Australian Standard Compliance</span>
+          {/* Stats strip */}
+          <div className="grid grid-cols-3 gap-6 mt-14 pt-8 border-t border-white/10 max-w-lg">
+            {[
+              { value: '150+', label: 'Homes Delivered' },
+              { value: '10+', label: 'Years Experience' },
+              { value: '500+', label: 'Happy Families' },
+            ].map((stat) => (
+              <div key={stat.label}>
+                <p className="font-heading text-2xl font-bold gradient-text">{stat.value}</p>
+                <p className="text-white/50 text-xs mt-0.5">{stat.label}</p>
+              </div>
+            ))}
           </div>
-          <div className="inline-flex items-center gap-2 bg-white/10 text-white px-4 py-2.5 rounded-lg border border-white/10">
-            <Clock size={18} className="text-accent" />
-            <span className="text-sm font-medium">Rapid Installation</span>
-          </div>
-          <div className="inline-flex items-center gap-2 bg-white/10 text-white px-4 py-2.5 rounded-lg border border-white/10">
-            <DollarSign size={18} className="text-accent" />
-            <span className="text-sm font-medium">Cost-Effective Solutions</span>
-          </div>
-        </div>
-
-        {/* CTA Buttons */}
-        <div className="flex flex-wrap gap-4 mt-10">
-          <a
-            href="#services"
-            className="inline-flex items-center gap-2 bg-accent hover:bg-accent-dark text-primary font-semibold px-8 py-3.5 rounded-lg transition-all hover:shadow-lg hover:shadow-accent/25"
-          >
-            Our Services
-          </a>
-          <a
-            href="#contact"
-            className="inline-flex items-center gap-2 border-2 border-white/20 text-white hover:border-accent hover:text-accent px-8 py-3.5 rounded-lg transition-all"
-          >
-            Get a Quote
-          </a>
-        </div>
-
-        {/* Contact strip */}
-        <div className="flex flex-wrap items-center gap-6 mt-12 pt-8 border-t border-white/10">
-          <a href="tel:08-6261 9255" className="flex items-center gap-2 text-white/70 hover:text-accent transition text-sm">
-            <Phone size={16} className="text-accent" />
-            08-6261 9255
-          </a>
-          <a href="tel:0452 218 881" className="flex items-center gap-2 text-white/70 hover:text-accent transition text-sm">
-            <Phone size={16} className="text-accent" />
-            0452 218 881
-          </a>
-          <a href="https://www.albhome.com.au" target="_blank" rel="noopener noreferrer" className="flex items-center gap-2 text-white/70 hover:text-accent transition text-sm">
-            <Globe size={16} className="text-accent" />
-            www.albhome.com.au
-          </a>
         </div>
       </div>
     </section>

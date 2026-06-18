@@ -27,29 +27,28 @@ function InstagramIcon({ size = 16 }) {
 export default function Footer() {
   return (
     <footer id="contact" className="bg-primary">
-      {/* Contact CTA */}
-      <div className="bg-accent py-12">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="flex flex-col lg:flex-row items-center justify-between gap-6">
-            <div>
-              <h3 className="font-heading text-2xl sm:text-3xl font-bold text-primary">
-                Ready to Start Your Project?
-              </h3>
-              <p className="text-primary/70 mt-1">
-                Get in touch with our team for a free consultation and quote.
-              </p>
-            </div>
-            <div className="flex flex-wrap gap-4">
+      {/* CTA Banner - like SnapBuild's "Connect with your local" */}
+      <div className="border-b border-white/10">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-14">
+          <div className="text-center">
+            <h2 className="font-heading text-3xl sm:text-4xl lg:text-5xl font-bold text-white uppercase tracking-wide">
+              Connect with Your Local<br />
+              <span className="gradient-text">ALB Home Branch</span>
+            </h2>
+            <p className="text-white/50 mt-4 max-w-xl mx-auto">
+              Ready to start your project? Get in touch with our team for a free consultation and quote.
+            </p>
+            <div className="flex flex-wrap justify-center gap-4 mt-8">
               <a
                 href="tel:08-6261 9255"
-                className="inline-flex items-center gap-2 bg-primary text-white hover:bg-primary-light font-semibold px-6 py-3 rounded-lg transition-all"
+                className="inline-flex items-center gap-2 bg-accent hover:bg-accent-dark text-primary font-semibold px-6 py-3 rounded-lg transition-all"
               >
                 <Phone size={16} />
                 08-6261 9255
               </a>
               <a
                 href="mailto:service@albhome.com.au"
-                className="inline-flex items-center gap-2 bg-white text-primary hover:bg-gray-100 font-semibold px-6 py-3 rounded-lg transition-all"
+                className="inline-flex items-center gap-2 border-2 border-white/20 text-white hover:border-accent hover:text-accent px-6 py-3 rounded-lg transition-all"
               >
                 <Mail size={16} />
                 Email Us
@@ -59,41 +58,50 @@ export default function Footer() {
         </div>
       </div>
 
-      {/* Main Footer */}
+      {/* Main Footer - Two column like SnapBuild */}
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
-        <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-10">
-          {/* Brand */}
+        <div className="grid lg:grid-cols-2 gap-12">
+          {/* Left: Brand + Mission */}
           <div>
-            <div className="flex items-center gap-2 mb-4">
-              <div className="w-10 h-10 rounded-lg bg-accent flex items-center justify-center">
-                <Home size={20} className="text-primary" />
+            <div className="flex items-center gap-3 mb-5">
+              <div className="w-11 h-11 rounded-lg bg-accent flex items-center justify-center">
+                <Home size={22} className="text-primary" />
               </div>
-              <span className="text-white font-heading font-bold text-xl">
-                ALB <span className="text-accent">Home</span>
-              </span>
+              <div>
+                <span className="text-white font-heading font-bold text-xl tracking-wide">
+                  ALB <span className="text-accent">Home</span>
+                </span>
+                <p className="text-xs text-white/40">Premium Living Solutions</p>
+              </div>
             </div>
-            <p className="text-white/50 text-sm leading-relaxed">
-              Premium modular building and housing solutions across Western Australia. Quality craftsmanship, innovative design.
+            <p className="text-white/50 text-sm leading-relaxed max-w-md">
+              We build premium modular and expandable homes designed for comfortable Australian living.
+              Quality craftsmanship, innovative design, and sustainable solutions — delivered across Western Australia.
             </p>
-            <div className="flex gap-3 mt-5">
-              <a href="#" className="w-9 h-9 rounded-lg bg-white/10 text-white/60 hover:bg-accent hover:text-primary flex items-center justify-center transition-all">
-                <FacebookIcon size={16} />
-              </a>
-              <a href="#" className="w-9 h-9 rounded-lg bg-white/10 text-white/60 hover:bg-accent hover:text-primary flex items-center justify-center transition-all">
-                <LinkedinIcon size={16} />
-              </a>
-              <a href="#" className="w-9 h-9 rounded-lg bg-white/10 text-white/60 hover:bg-accent hover:text-primary flex items-center justify-center transition-all">
-                <InstagramIcon size={16} />
-              </a>
+            <div className="flex gap-3 mt-6">
+              {[
+                { icon: FacebookIcon, href: '#' },
+                { icon: LinkedinIcon, href: '#' },
+                { icon: InstagramIcon, href: '#' },
+              ].map((social, idx) => (
+                <a
+                  key={idx}
+                  href={social.href}
+                  className="w-10 h-10 rounded-full bg-white/10 text-white/50 hover:bg-accent hover:text-primary flex items-center justify-center transition-all"
+                >
+                  <social.icon size={16} />
+                </a>
+              ))}
             </div>
           </div>
 
-          {/* Quick Links */}
-          <div>
-            <h4 className="font-heading font-bold text-white mb-4">Quick Links</h4>
-            <ul className="space-y-2.5">
-              {['Home', 'Renovations', 'Services', 'Materials', 'Why Us', 'Gallery', 'Contact'].map(
-                (link) => (
+          {/* Right: Menus + Contacts */}
+          <div className="grid sm:grid-cols-3 gap-8">
+            {/* Menu */}
+            <div>
+              <h4 className="font-heading font-bold text-white text-sm uppercase tracking-wider mb-4">Menu</h4>
+              <ul className="space-y-2.5">
+                {['Gallery', 'About Us', 'Blog', 'Contact', 'FAQs', 'Terms'].map((link) => (
                   <li key={link}>
                     <a
                       href={`#${link.toLowerCase().replace(/\s+/g, '-')}`}
@@ -102,49 +110,44 @@ export default function Footer() {
                       {link}
                     </a>
                   </li>
-                )
-              )}
-            </ul>
-          </div>
+                ))}
+              </ul>
+            </div>
 
-          {/* Locations */}
-          <div>
-            <h4 className="font-heading font-bold text-white mb-4">Service Areas</h4>
-            <ul className="space-y-2.5">
-              {['Perth', 'Belmont', 'Western Australia'].map((loc) => (
-                <li key={loc}>
-                  <a
-                    href="#contact"
-                    className="text-white/50 hover:text-accent text-sm transition"
-                  >
-                    {loc}
+            {/* Locations */}
+            <div>
+              <h4 className="font-heading font-bold text-white text-sm uppercase tracking-wider mb-4">Locations</h4>
+              <ul className="space-y-2.5">
+                {['Perth', 'Belmont', 'Western Australia', 'QLD'].map((loc) => (
+                  <li key={loc}>
+                    <span className="text-white/50 text-sm cursor-default">{loc}</span>
+                  </li>
+                ))}
+              </ul>
+            </div>
+
+            {/* Contact */}
+            <div>
+              <h4 className="font-heading font-bold text-white text-sm uppercase tracking-wider mb-4">Contact</h4>
+              <ul className="space-y-3">
+                <li className="flex items-start gap-2">
+                  <MapPin size={14} className="text-accent flex-shrink-0 mt-0.5" />
+                  <span className="text-white/50 text-sm">1 Longfellow Court,<br />Belmont WA 6104</span>
+                </li>
+                <li>
+                  <a href="tel:08-6261 9255" className="flex items-center gap-2 text-white/50 hover:text-accent text-sm transition">
+                    <Phone size={14} className="text-accent flex-shrink-0" />
+                    08-6261 9255
                   </a>
                 </li>
-              ))}
-            </ul>
-          </div>
-
-          {/* Contact Info */}
-          <div>
-            <h4 className="font-heading font-bold text-white mb-4">Contact</h4>
-            <ul className="space-y-3">
-              <li className="flex items-start gap-3">
-                <MapPin size={16} className="text-accent flex-shrink-0 mt-0.5" />
-                <span className="text-white/50 text-sm">1 Longfellow Court, Belmont WA 6104</span>
-              </li>
-              <li>
-                <a href="tel:08-6261 9255" className="flex items-center gap-3 text-white/50 hover:text-accent text-sm transition">
-                  <Phone size={16} className="text-accent flex-shrink-0" />
-                  08-6261 9255
-                </a>
-              </li>
-              <li>
-                <a href="mailto:service@albhome.com.au" className="flex items-center gap-3 text-white/50 hover:text-accent text-sm transition">
-                  <Mail size={16} className="text-accent flex-shrink-0" />
-                  service@albhome.com.au
-                </a>
-              </li>
-            </ul>
+                <li>
+                  <a href="mailto:service@albhome.com.au" className="flex items-center gap-2 text-white/50 hover:text-accent text-sm transition">
+                    <Mail size={14} className="text-accent flex-shrink-0" />
+                    service@albhome.com.au
+                  </a>
+                </li>
+              </ul>
+            </div>
           </div>
         </div>
       </div>
@@ -152,12 +155,12 @@ export default function Footer() {
       {/* Bottom Bar */}
       <div className="border-t border-white/10">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-6">
-          <div className="flex flex-col sm:flex-row justify-between items-center gap-4">
-            <p className="text-white/40 text-xs">
+          <div className="flex flex-col sm:flex-row justify-between items-center gap-3">
+            <p className="text-white/30 text-xs">
               &copy; {new Date().getFullYear()} ALB Home. All rights reserved.
             </p>
-            <p className="text-white/30 text-xs">
-              Designed with care for Western Australian living
+            <p className="text-white/20 text-xs">
+              All information is indicative only and subject to change.
             </p>
           </div>
         </div>
