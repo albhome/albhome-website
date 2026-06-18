@@ -7,7 +7,7 @@ const structuralOptions = [
     color: 'bg-emerald-700',
     iconBg: 'bg-emerald-600',
     icon: Home,
-    image: 'https://images.unsplash.com/photo-1587293852726-70cdb56bd286?w=600&q=80',
+    image: 'https://images.unsplash.com/photo-1512917774080-9991f1c4c750?w=600&q=80',
     features: [
       'Excellent thermal insulation',
       'Fast and efficient installation',
@@ -21,7 +21,7 @@ const structuralOptions = [
     color: 'bg-blue-800',
     iconBg: 'bg-blue-700',
     icon: Zap,
-    image: 'https://images.unsplash.com/photo-1541888946425-d81bb19240f5?w=600&q=80',
+    image: 'https://images.unsplash.com/photo-1565008447742-97f6f30c3e09?w=600&q=80',
     features: [
       'Strong and durable structure',
       'Excellent wind resistance',
@@ -35,7 +35,7 @@ const structuralOptions = [
     color: 'bg-slate-600',
     iconBg: 'bg-slate-500',
     icon: Building2,
-    image: 'https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?w=600&q=80',
+    image: 'https://images.unsplash.com/photo-1600585154340-be6161a56a0c?w=600&q=80',
     features: [
       'Lightweight and corrosion resistant',
       'Ideal for coastal environments',
