@@ -6,12 +6,9 @@ export default function Hero() {
       {/* Background image with gradient overlay */}
       <div className="absolute inset-0">
         <img
-          src="/albhome-hero.jpg"
+          src="/hero-bg.png"
           alt="ALB Home - Modular Building Solutions"
-          className="w-full h-full object-cover opacity-40 hero-bg-zoom"
-          onError={(e) => {
-            e.target.src = '/hero-bg.png'
-          }}
+          className="w-full h-full object-cover opacity-50 hero-bg-zoom"
         />
         <div className="absolute inset-0 bg-gradient-to-r from-black/80 via-black/60 to-transparent" />
       </div>
