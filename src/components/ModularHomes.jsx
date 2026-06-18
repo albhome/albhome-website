@@ -1,29 +1,41 @@
-import { ArrowRight, Home, Expand, Sun, Package } from 'lucide-react'
+import { ArrowRight, Bed, Bath, ChefHat, Maximize2 } from 'lucide-react'
 
-const homeTypes = [
+const products = [
   {
-    icon: Home,
-    title: 'Modular Homes',
-    desc: 'Fully customizable modular homes designed to your exact specifications. Built off-site and delivered ready to enjoy.',
+    name: 'ALB Home™ 20FT Classic',
+    tagline: 'Compact living, maximum comfort',
     image: 'https://images.unsplash.com/photo-1600585154340-be6161a56a0c?w=600&q=80',
+    specs: [
+      { icon: Bed, label: '1 Bed' },
+      { icon: Bath, label: '1 Bath' },
+      { icon: ChefHat, label: 'Kitchen' },
+      { icon: Maximize2, label: '20ft' },
+    ],
+    features: ['Fully insulated', 'Open plan living', 'Pre-wired & plumbed', 'Turnkey ready'],
   },
   {
-    icon: Expand,
-    title: 'Expandable Homes',
-    desc: 'Innovative expandable living solutions that grow with your needs. Perfect for flexible, affordable housing.',
-    image: 'https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?w=600&q=80',
+    name: 'ALB Home™ 30FT Family',
+    tagline: 'Spacious living for growing families',
+    image: 'https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?w=600&q=80',
+    specs: [
+      { icon: Bed, label: '2 Bed' },
+      { icon: Bath, label: '1 Bath' },
+      { icon: ChefHat, label: 'Kitchen' },
+      { icon: Maximize2, label: '30ft' },
+    ],
+    features: ['Two bedrooms', 'Spacious living area', 'Full kitchen', 'Built-in storage'],
   },
   {
-    icon: Sun,
-    title: 'Off-Grid Homes',
-    desc: 'Self-sufficient living solutions with solar integration and sustainable systems for remote or eco-conscious living.',
+    name: 'ALB Home™ 40FT Premium',
+    tagline: 'Premium living, uncompromised',
     image: 'https://images.unsplash.com/photo-1600573472550-8090b5e0745e?w=600&q=80',
-  },
-  {
-    icon: Package,
-    title: 'Accessories',
-    desc: 'Complete your setup with our range of premium accessories including decking, awnings, and storage solutions.',
-    image: 'https://images.unsplash.com/photo-1600566753190-17f0baa2a6c3?w=600&q=80',
+    specs: [
+      { icon: Bed, label: '3 Bed' },
+      { icon: Bath, label: '2 Bath' },
+      { icon: ChefHat, label: 'Kitchen' },
+      { icon: Maximize2, label: '40ft' },
+    ],
+    features: ['Three bedrooms', 'Master ensuite', 'Walk-in wardrobe', 'Premium finishes'],
   },
 ]
 
@@ -31,44 +43,73 @@ export default function ModularHomes() {
   return (
     <section id="modular-homes" className="py-20 sm:py-28 bg-surface">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="text-center mb-16">
-          <span className="section-badge">
-            <Home size={14} />
-            Our Homes
-          </span>
-          <h2 className="font-heading text-3xl sm:text-4xl lg:text-5xl font-bold text-primary mt-4">
-            Premium Living Solutions
+        {/* Breadcrumb-style heading */}
+        <div className="text-center mb-4">
+          <span className="section-badge">Our Homes</span>
+        </div>
+        <div className="text-center mb-4">
+          <h2 className="font-heading text-3xl sm:text-4xl lg:text-5xl font-bold text-primary uppercase tracking-wide">
+            20FT / 30FT / 40FT Extended Homes
           </h2>
           <p className="text-gray-500 max-w-2xl mx-auto mt-4 text-lg">
-            From compact expandable units to spacious modular designs, find the perfect home for your lifestyle.
+            Eco-friendly, customisable modular homes designed for modern Australian living.
           </p>
         </div>
 
-        <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-6">
-          {homeTypes.map((item, idx) => (
+        {/* Product cards */}
+        <div className="grid md:grid-cols-3 gap-6 mt-12">
+          {products.map((product) => (
             <div
-              key={item.title}
-              className="group bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-xl transition-all duration-300 card-hover"
+              key={product.name}
+              className="bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-xl transition-all duration-300 group"
             >
-              <div className="relative h-48 overflow-hidden">
+              {/* Product image */}
+              <div className="relative h-52 overflow-hidden">
                 <img
-                  src={item.image}
-                  alt={item.title}
-                  className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
+                  src={product.image}
+                  alt={product.name}
+                  className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
                 />
-                <div className="absolute inset-0 bg-gradient-to-t from-black/40 to-transparent" />
-                <div className="absolute bottom-3 left-3 bg-accent/90 text-primary p-2 rounded-lg">
-                  <item.icon size={20} />
-                </div>
+                <div className="absolute inset-0 bg-gradient-to-t from-black/30 to-transparent" />
               </div>
+
+              {/* Spec badges row */}
+              <div className="grid grid-cols-4 border-b border-gray-100">
+                {product.specs.map((spec) => (
+                  <div
+                    key={spec.label}
+                    className="flex flex-col items-center gap-1 py-3 border-r border-gray-100 last:border-r-0"
+                  >
+                    <spec.icon size={16} className="text-accent" />
+                    <span className="text-[11px] text-gray-500 font-medium uppercase tracking-wider">
+                      {spec.label}
+                    </span>
+                  </div>
+                ))}
+              </div>
+
+              {/* Content */}
               <div className="p-5">
-                <h3 className="font-heading font-bold text-lg text-primary">{item.title}</h3>
-                <p className="text-gray-500 text-sm mt-2 leading-relaxed">{item.desc}</p>
+                <h3 className="font-heading font-bold text-lg text-primary uppercase tracking-wide leading-tight">
+                  {product.name}
+                </h3>
+                <p className="text-gray-500 text-sm mt-1">{product.tagline}</p>
+
+                {/* Features */}
+                <ul className="mt-4 space-y-1.5">
+                  {product.features.map((feature) => (
+                    <li key={feature} className="flex items-center gap-2 text-sm text-gray-600">
+                      <span className="w-1.5 h-1.5 rounded-full bg-accent flex-shrink-0" />
+                      {feature}
+                    </li>
+                  ))}
+                </ul>
+
                 <a
                   href="#contact"
-                  className="inline-flex items-center gap-1.5 text-accent-dark text-sm font-semibold mt-4 group/link"
+                  className="inline-flex items-center gap-1.5 text-accent font-semibold text-sm mt-4 group/link"
                 >
-                  View More
+                  Explore
                   <ArrowRight size={14} className="group-hover/link:translate-x-1 transition-transform" />
                 </a>
               </div>
