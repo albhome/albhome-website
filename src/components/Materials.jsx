@@ -21,7 +21,7 @@ const structuralOptions = [
     color: 'bg-blue-800',
     iconBg: 'bg-blue-700',
     icon: Zap,
-    image: 'https://images.unsplash.com/photo-1590674899484-d5640d7d0550?w=600&q=80',
+    image: 'https://images.unsplash.com/photo-1504307651254-35680f356dfd?w=600&q=80',
     features: [
       'Strong and durable structure',
       'Excellent wind resistance',
