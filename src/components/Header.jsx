@@ -62,16 +62,8 @@ export default function Header() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6">
           <div className="flex items-center justify-between h-16 lg:h-20">
             {/* Logo */}
-            <a href="#" className="flex items-center gap-2.5">
-              <div className="w-9 h-9 rounded-lg bg-accent flex items-center justify-center">
-                <span className="text-primary font-heading font-bold text-sm">ALB</span>
-              </div>
-              <div>
-                <span className="text-white font-heading font-bold text-lg tracking-wide">
-                  ALB <span className="text-accent">Home</span>
-                </span>
-                <p className="text-[10px] text-white/40 leading-none hidden sm:block">Premium Living Solutions</p>
-              </div>
+            <a href="#" className="flex items-center">
+              <img src="/logo.webp" alt="ALB Home" className="h-10 sm:h-12 w-auto" />
             </a>
 
             {/* Desktop Nav */}
@@ -145,8 +137,8 @@ export default function Header() {
         }`}
       >
         <div className="flex items-center justify-between px-4 py-4 border-b border-white/10">
-          <a href="#" className="text-white font-heading font-bold text-lg">
-            ALB <span className="text-accent">Home</span>
+          <a href="#">
+            <img src="/logo.webp" alt="ALB Home" className="h-8 w-auto" />
           </a>
           <button onClick={() => setMobileOpen(false)} className="text-white/70">
             <X size={20} />

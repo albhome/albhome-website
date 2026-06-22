@@ -63,16 +63,8 @@ export default function Footer() {
         <div className="grid lg:grid-cols-2 gap-12">
           {/* Left: Brand + Mission */}
           <div>
-            <div className="flex items-center gap-3 mb-5">
-              <div className="w-11 h-11 rounded-lg bg-accent flex items-center justify-center">
-                <Home size={22} className="text-primary" />
-              </div>
-              <div>
-                <span className="text-white font-heading font-bold text-xl tracking-wide">
-                  ALB <span className="text-accent">Home</span>
-                </span>
-                <p className="text-xs text-white/40">Premium Living Solutions</p>
-              </div>
+            <div className="mb-5">
+              <img src="/logo.webp" alt="ALB Home" className="h-12 w-auto" />
             </div>
             <p className="text-white/50 text-sm leading-relaxed max-w-md">
               We build premium modular and expandable homes designed for comfortable Australian living.
