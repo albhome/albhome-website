@@ -60,7 +60,7 @@ const products = [
     tagline: 'Premium independent living at its finest',
     image: 'https://images.unsplash.com/photo-1600573472550-8090b5e0745e?w=800&q=80',
     specs: [
-      { icon: Bed, label: '2 Bed' },
+      { icon: Bed, label: '3 Bed' },
       { icon: Bath, label: '1 Bath' },
       { icon: Maximize2, label: '76m²' },
       { icon: Ruler, label: '40ft' },
@@ -73,7 +73,7 @@ const products = [
       'Defined spaces for living and dining',
       'LED soft shell ceiling lights throughout',
       'Oversized 1125mm windows for natural light',
-      'Open-plan living and kitchen layout',
+      '3-bedroom open-plan living and kitchen',
       '18mm magnesium oxide subfloor with PVC/SPC finish',
     ],
     optional: [
