@@ -1,0 +1,106 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1320 560" width="100%" height="100%">
+  <defs>
+    <style>
+
+      .bg-w { fill: #ffffff; }
+      .wall-ext { fill: none; stroke: #000; stroke-width: 3; stroke-linejoin: round; }
+      .wall-int { fill: none; stroke: #000; stroke-width: 2.5; }
+      .wall-thin { fill: none; stroke: #666; stroke-width: 1.2; }
+      .room-bed { fill: #f0f4f8; }
+      .room-living { fill: #f8f6f0; }
+      .room-kitchen { fill: #f5f5f0; }
+      .room-bath { fill: #f0f8f4; }
+      .room-util { fill: #fafafa; }
+      .room-label { font-family: system-ui, sans-serif; font-size: 11px; fill: #000; font-weight: 700; text-anchor: middle; }
+      .room-label-sm { font-family: system-ui, sans-serif; font-size: 7px; fill: #555; text-anchor: middle; }
+      .dim-label { font-family: system-ui, sans-serif; font-size: 7px; fill: #666; text-anchor: middle; }
+      .dim-line { stroke: #999; stroke-width: 0.5; stroke-dasharray: 2,2.5; }
+      .furniture { fill: none; stroke: #888; stroke-width: 1; }
+      .furniture-fill { fill: #e8e8e8; stroke: #888; stroke-width: 0.8; }
+      .furniture-stroke { fill: #ddd; stroke: #888; stroke-width: 1; }
+      .dims-title { font-family: system-ui, sans-serif; font-size: 8px; fill: #222; font-weight: 700; letter-spacing: 1px; }
+      .dims-item { font-family: system-ui, sans-serif; font-size: 7px; fill: #555; }
+      .dims-value { font-family: system-ui, sans-serif; font-size: 7px; fill: #000; font-weight: 600; text-anchor: end; }
+
+    </style>
+  </defs>
+  <rect class="bg-w" x="0" y="0" width="1320" height="560" rx="4"/>
+
+  <text class="dims-title" x="22" y="14">LUNA IV — 3 Bedroom</text>
+  <text class="dim-label" x="22" y="23">Accessory Dwelling Unit</text>
+
+  <rect class="wall-ext" x="20" y="26" width="1260" height="506" rx="3"/>
+
+  <rect x="22" y="26" width="540" height="506" class="room-living" rx="1"/>
+  <text class="room-label" x="292" y="270">LIVING &amp; KITCHEN</text>
+  <rect x="562" y="26" width="170" height="230" class="room-bath" rx="1"/>
+  <text class="room-label" x="647" y="130">BATHROOM</text>
+  <rect x="562" y="256" width="170" height="276" class="room-bed" rx="1"/>
+  <text class="room-label" x="647" y="390">BEDROOM 3</text>
+  <rect x="732" y="26" width="270" height="170" class="room-bed" rx="1"/>
+  <text class="room-label" x="867" y="110">BEDROOM 1</text>
+  <rect x="732" y="196" width="270" height="336" class="room-bed" rx="1"/>
+  <text class="room-label" x="867" y="360">BEDROOM 2</text>
+  <rect x="1002" y="26" width="256" height="506" class="room-util" rx="1"/>
+  <text class="room-label" x="1130" y="270">STUDY</text>
+
+  <line class="wall-int" x1="562" y1="26" x2="562" y2="532"/>
+  <line class="wall-int" x1="732" y1="26" x2="732" y2="532"/>
+  <line class="wall-int" x1="1002" y1="26" x2="1002" y2="532"/>
+
+  <rect class="furniture-fill" x="35" y="26" width="220" height="40" rx="2"/>
+  <circle cx="65" cy="46" r="4.5" fill="#ccc"/>
+  <circle cx="90" cy="46" r="4.5" fill="#ccc"/>
+  <rect class="furniture-fill" x="240" y="200" width="75" height="50" rx="5"/>
+  <rect class="furniture-fill" x="200" y="420" width="130" height="35" rx="4"/>
+  <rect class="furniture" x="580" y="50" width="45" height="45" rx="3"/>
+  <circle cx="602.5" cy="72.5" r="10" fill="#ddd"/>
+  <rect class="furniture" x="640" y="140" width="22" height="25" rx="2"/>
+  <circle cx="651" cy="157" r="6" fill="#ddd"/>
+  <rect class="furniture-fill" x="580" y="150" width="35" height="22" rx="2"/>
+  <rect class="furniture-fill" x="580" y="280" width="60" height="50" rx="3"/>
+  <rect class="furniture" x="580" y="280" width="60" height="18" rx="2"/>
+  <rect class="furniture" x="665" y="310" width="10" height="80" rx="1"/>
+  <rect class="furniture-fill" x="760" y="55" width="80" height="55" rx="3"/>
+  <rect class="furniture" x="760" y="55" width="80" height="18" rx="2"/>
+  <rect class="furniture-fill" x="755" y="45" width="12" height="12" rx="2"/>
+  <rect class="furniture-fill" x="833" y="45" width="12" height="12" rx="2"/>
+  <rect class="furniture" x="795" y="73" width="8" height="8" rx="4"/>
+  <rect class="furniture" x="990" y="50" width="10" height="100" rx="1"/>
+  <rect class="furniture-fill" x="760" y="220" width="80" height="55" rx="3"/>
+  <rect class="furniture" x="760" y="220" width="80" height="18" rx="2"/>
+  <rect class="furniture-fill" x="1030" y="200" width="50" height="30" rx="2"/>
+  <rect class="furniture-fill" x="860" y="26" width="130" height="28" rx="2"/>
+  <rect class="furniture" x="865" y="32" width="20" height="16" rx="2"/>
+
+  <rect x="1030" y="435" width="250" height="130" rx="3" fill="#f0f0f0" stroke="#ddd" stroke-width="0.8"/>
+  <text class="dims-title" x="1045" y="450">DIMENSIONS</text>
+  <text class="dims-item" x="1045" y="464">Living &amp; Kitchen</text><text class="dims-value" x="1265" y="464">20.2m²</text>
+  <text class="dims-item" x="1045" y="478">Bedroom 1</text><text class="dims-value" x="1265" y="478">10.0m²</text>
+  <text class="dims-item" x="1045" y="492">Bedroom 2</text><text class="dims-value" x="1265" y="492">7.50m²</text>
+  <text class="dims-item" x="1045" y="506">Bedroom 3</text><text class="dims-value" x="1265" y="506">7.50m²</text>
+  <text class="dims-item" x="1045" y="520">Bathroom</text><text class="dims-value" x="1265" y="520">3.96m²</text>
+  <text class="dims-item" x="1045" y="534" font-weight="600" fill="#1a1a1a">Total</text><text class="dims-value" x="1265" y="534" font-weight="700" fill="#1a1a1a">59.48m²</text>
+
+  <line class="dim-line" x1="20" y1="540" x2="1290" y2="540"/>
+  <line class="dim-line" x1="20" y1="536" x2="20" y2="544"/>
+  <line class="dim-line" x1="1290" y1="536" x2="1290" y2="544"/>
+  <text class="dim-label" x="660" y="552">12,600mm</text>
+
+  <line class="dim-line" x1="1300" y1="26" x2="1300" y2="532"/>
+  <line class="dim-line" x1="1296" y1="26" x2="1304" y2="26"/>
+  <line class="dim-line" x1="1296" y1="532" x2="1304" y2="532"/>
+  <text class="dim-label" x="1315" y="279" transform="rotate(90, 1315, 279)">4,910mm</text>
+
+  <!-- Scale bar -->
+  <line class="wall-int" x1="30" y1="555" x2="130" y2="555"/>
+  <line class="wall-thin" x1="30" y1="552" x2="30" y2="558"/>
+  <line class="wall-thin" x1="130" y1="552" x2="130" y2="558"/>
+  <text class="dim-label" x="80" y="550">1m</text>
+
+  <!-- North arrow -->
+  <g transform="translate(1260, 38)">
+    <polygon points="0,-8 3.5,0 -3.5,0" fill="#666"/>
+    <text class="dim-label" x="0" y="-10" text-anchor="middle" font-weight="700" font-size="7">N</text>
+  </g>
+</svg>

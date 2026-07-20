@@ -1,0 +1,270 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 550" fill="none">
+  <rect width="800" height="550" fill="#f7f5ef"/>
+
+  <!-- Title Block -->
+  <rect x="20" y="12" width="760" height="40" fill="#283406" rx="4"/>
+  <text x="400" y="37" text-anchor="middle" font-family="Oswald, sans-serif" font-size="18" font-weight="bold" fill="#fff" letter-spacing="2">30FT OUTBACK CLASSIC — FLOOR PLAN</text>
+  <text x="400" y="68" text-anchor="middle" font-family="Arial, sans-serif" font-size="11" fill="#666">Approx. 58m² | 2 Bedrooms | 1 Bathroom | 30ft Expandable Home</text>
+
+  <!-- North Arrow -->
+  <g transform="translate(730, 75)">
+    <polygon points="0,-15 -5,5 0,0 5,5" fill="#8E9E61"/>
+    <text x="0" y="-18" text-anchor="middle" font-family="Arial" font-size="9" font-weight="bold" fill="#8E9E61">N</text>
+  </g>
+
+  <!-- OUTER WALLS (9.1m x 2.4m) -->
+  <rect x="30" y="90" width="740" height="310" stroke="#2a2a2a" stroke-width="4" fill="none"/>
+  <rect x="33" y="93" width="734" height="304" stroke="#2a2a2a" stroke-width="1.5" fill="none" stroke-dasharray="2,3"/>
+
+  <!-- ===== INTERIOR WALLS ===== -->
+
+  <!-- Main corridor wall (horizontal divider) -->
+  <line x1="30" y1="270" x2="460" y2="270" stroke="#2a2a2a" stroke-width="3"/>
+  <line x1="33" y1="273" x2="457" y2="273" stroke="#2a2a2a" stroke-width="1" stroke-dasharray="2,3"/>
+
+  <!-- Bathroom walls -->
+  <line x1="460" y1="270" x2="460" y2="400" stroke="#2a2a2a" stroke-width="3"/>
+  <line x1="457" y1="273" x2="457" y2="397" stroke="#2a2a2a" stroke-width="1" stroke-dasharray="2,3"/>
+  <line x1="460" y1="270" x2="570" y2="270" stroke="#2a2a2a" stroke-width="3"/>
+  <line x1="463" y1="273" x2="567" y2="273" stroke="#2a2a2a" stroke-width="1" stroke-dasharray="2,3"/>
+
+  <!-- Bedroom 2 divider -->
+  <line x1="570" y1="270" x2="570" y2="400" stroke="#2a2a2a" stroke-width="3"/>
+  <line x1="567" y1="273" x2="567" y2="397" stroke="#2a2a2a" stroke-width="1" stroke-dasharray="2,3"/>
+
+  <!-- Bedroom 1 divider -->
+  <line x1="460" y1="90" x2="460" y2="260" stroke="#2a2a2a" stroke-width="3"/>
+  <line x1="457" y1="93" x2="457" y2="257" stroke="#2a2a2a" stroke-width="1" stroke-dasharray="2,3"/>
+
+  <!-- Bathroom shower wall -->
+  <line x1="460" y1="90" x2="460" y2="155" stroke="#2a2a2a" stroke-width="2.5"/>
+
+  <!-- ===== DOOR SWINGS ===== -->
+
+  <!-- Front Entry Door -->
+  <g transform="translate(200, 385)">
+    <rect x="0" y="0" width="36" height="7" fill="#f7f5ef" stroke="#8E9E61" stroke-width="2"/>
+    <path d="M0,7 Q-36,7 -36,30" fill="none" stroke="#8E9E61" stroke-width="1" stroke-dasharray="3,2"/>
+    <text x="18" y="20" text-anchor="middle" font-family="Arial" font-size="7" fill="#8E9E61">FRONT ENTRY</text>
+  </g>
+
+  <!-- Bedroom 1 Door -->
+  <g transform="translate(555, 245)">
+    <rect x="0" y="0" width="7" height="22" fill="#f7f5ef" stroke="#555" stroke-width="1.5"/>
+    <path d="M7,0 Q20,0 20,-20" fill="none" stroke="#555" stroke-width="1" stroke-dasharray="3,2"/>
+  </g>
+
+  <!-- Bathroom Door -->
+  <g transform="translate(562, 260)">
+    <rect x="0" y="0" width="22" height="7" fill="#f7f5ef" stroke="#555" stroke-width="1.5"/>
+    <path d="M22,0 Q22,-20 0,-20" fill="none" stroke="#555" stroke-width="1" stroke-dasharray="3,2"/>
+  </g>
+
+  <!-- Bedroom 2 Door -->
+  <g transform="translate(682, 375)">
+    <rect x="0" y="0" width="7" height="22" fill="#f7f5ef" stroke="#555" stroke-width="1.5"/>
+    <path d="M7,0 Q18,0 18,-15" fill="none" stroke="#555" stroke-width="1" stroke-dasharray="3,2"/>
+  </g>
+
+  <!-- ===== WINDOWS ===== -->
+
+  <!-- Living room window (large) -->
+  <g>
+    <rect x="28" y="130" width="8" height="80" fill="#c8dde8" stroke="#8E9E61" stroke-width="1.5"/>
+    <line x1="32" y1="130" x2="32" y2="210" stroke="#8E9E61" stroke-width="0.5"/>
+    <line x1="34" y1="130" x2="34" y2="210" stroke="#8E9E61" stroke-width="0.5"/>
+    <rect x="25" y="145" width="3" height="50" fill="#8E9E61" opacity="0.3"/>
+    <rect x="36" y="145" width="3" height="50" fill="#8E9E61" opacity="0.3"/>
+  </g>
+
+  <!-- Bedroom 1 window -->
+  <g>
+    <rect x="460" y="120" width="8" height="50" fill="#c8dde8" stroke="#8E9E61" stroke-width="1.5"/>
+    <line x1="464" y1="120" x2="464" y2="170" stroke="#8E9E61" stroke-width="0.5"/>
+    <line x1="466" y1="120" x2="466" y2="170" stroke="#8E9E61" stroke-width="0.5"/>
+  </g>
+
+  <!-- Bedroom 2 window -->
+  <g>
+    <rect x="762" y="290" width="8" height="50" fill="#c8dde8" stroke="#8E9E61" stroke-width="1.5"/>
+    <line x1="766" y1="290" x2="766" y2="340" stroke="#8E9E61" stroke-width="0.5"/>
+    <line x1="768" y1="290" x2="768" y2="340" stroke="#8E9E61" stroke-width="0.5"/>
+  </g>
+
+  <!-- Bathroom window (high) -->
+  <g>
+    <rect x="700" y="88" width="50" height="8" fill="#c8dde8" stroke="#8E9E61" stroke-width="1.5"/>
+    <line x1="700" y1="92" x2="750" y2="92" stroke="#8E9E61" stroke-width="0.5"/>
+    <line x1="700" y1="94" x2="750" y2="94" stroke="#8E9E61" stroke-width="0.5"/>
+  </g>
+
+  <!-- ===== OPEN PLAN LIVING (Top-Left) ===== -->
+  <rect x="38" y="98" width="410" height="160" fill="#f5f3ea" rx="2"/>
+
+  <text x="240" y="130" text-anchor="middle" font-family="Oswald, sans-serif" font-size="13" font-weight="bold" fill="#283406" letter-spacing="1">OPEN PLAN LIVING</text>
+  <text x="240" y="146" text-anchor="middle" font-family="Arial" font-size="8" fill="#888">Living · Dining · Kitchen</text>
+
+  <!-- Living Area -->
+  <rect x="55" y="160" width="180" height="90" fill="#f0ede0" rx="3"/>
+
+  <!-- L-shaped Sofa -->
+  <rect x="65" y="175" width="90" height="36" fill="#8E9E61" rx="4"/>
+  <rect x="65" y="175" width="22" height="65" fill="#8E9E61" rx="4"/>
+  <rect x="65" y="195" width="90" height="4" fill="#6B7C42" rx="1"/>
+  <line x1="80" y1="178" x2="80" y2="208" stroke="#6B7C42" stroke-width="0.5"/>
+  <line x1="95" y1="178" x2="95" y2="208" stroke="#6B7C42" stroke-width="0.5"/>
+  <line x1="110" y1="178" x2="110" y2="208" stroke="#6B7C42" stroke-width="0.5"/>
+
+  <!-- Coffee Table -->
+  <rect x="168" y="190" width="50" height="30" fill="#d4c9a8" rx="2"/>
+
+  <!-- TV Unit -->
+  <rect x="55" y="255" width="110" height="6" fill="#444" rx="1"/>
+  <rect x="75" y="261" width="70" height="3" fill="#666" rx="1"/>
+
+  <!-- Dining Area -->
+  <rect x="250" y="165" width="185" height="85" fill="#f0ede0" rx="3"/>
+  <text x="340" y="185" text-anchor="middle" font-family="Oswald, sans-serif" font-size="10" font-weight="bold" fill="#283406">DINING</text>
+
+  <!-- Dining Table (6-seater) -->
+  <rect x="280" y="195" width="100" height="40" fill="#c4b896" rx="2"/>
+  <rect x="282" y="197" width="96" height="36" fill="#d4c9a8" rx="1"/>
+
+  <!-- Chairs -->
+  <rect x="285" y="185" width="22" height="10" fill="#666" rx="1"/>
+  <rect x="320" y="185" width="22" height="10" fill="#666" rx="1"/>
+  <rect x="353" y="185" width="22" height="10" fill="#666" rx="1"/>
+  <rect x="285" y="235" width="22" height="10" fill="#666" rx="1"/>
+  <rect x="320" y="235" width="22" height="10" fill="#666" rx="1"/>
+  <rect x="353" y="235" width="22" height="10" fill="#666" rx="1"/>
+
+  <!-- Kitchen Area -->
+  <rect x="55" y="98" width="200" height="55" fill="#e8f0e0" rx="2"/>
+
+  <!-- Counter -->
+  <rect x="55" y="98" width="200" height="8" fill="#8E9E61" rx="1"/>
+  <rect x="55" y="106" width="200" height="42" fill="#d4ddc4" rx="1"/>
+
+  <!-- Stove -->
+  <rect x="65" y="110" width="35" height="20" fill="#555" rx="2"/>
+  <circle cx="74" cy="116" r="3.5" fill="#888"/>
+  <circle cx="92" cy="116" r="3.5" fill="#888"/>
+  <circle cx="74" cy="126" r="3.5" fill="#888"/>
+  <circle cx="92" cy="126" r="3.5" fill="#888"/>
+
+  <!-- Sink -->
+  <rect x="115" y="112" width="32" height="16" fill="#ccc" rx="3"/>
+  <rect x="118" y="114" width="26" height="12" fill="#bbb" rx="2"/>
+
+  <!-- Fridge -->
+  <rect x="162" y="106" width="25" height="32" fill="#ddd" rx="1"/>
+  <line x1="174" y1="106" x2="174" y2="138" stroke="#ccc" stroke-width="0.5"/>
+
+  <text x="105" y="155" text-anchor="middle" font-family="Oswald, sans-serif" font-size="10" font-weight="bold" fill="#283406">KITCHEN</text>
+
+  <!-- ===== BEDROOM 1 (Top-Right) ===== -->
+  <rect x="468" y="98" width="292" height="150" fill="#e6edf5" rx="2"/>
+  <text x="615" y="128" text-anchor="middle" font-family="Oswald, sans-serif" font-size="13" font-weight="bold" fill="#283406" letter-spacing="1">BEDROOM 1</text>
+  <text x="615" y="144" text-anchor="middle" font-family="Arial" font-size="9" fill="#666">4.0m × 3.2m (12.8m²)</text>
+
+  <!-- Queen Bed -->
+  <rect x="555" y="155" width="65" height="55" fill="#d0dce8" rx="3"/>
+  <rect x="555" y="155" width="65" height="8" fill="#8E9E61" rx="2"/>
+  <rect x="562" y="162" width="22" height="12" fill="#fff" rx="2" opacity="0.7"/>
+  <rect x="590" y="162" width="22" height="12" fill="#fff" rx="2" opacity="0.7"/>
+  <rect x="562" y="178" width="52" height="26" fill="#b0c4d8" rx="1" opacity="0.5"/>
+  <text x="587" y="194" text-anchor="middle" font-family="Arial" font-size="6" fill="#666">QUEEN</text>
+
+  <!-- Bedside Tables -->
+  <rect x="535" y="165" width="15" height="16" fill="#c4b896" rx="1"/>
+  <rect x="625" y="165" width="15" height="16" fill="#c4b896" rx="1"/>
+
+  <!-- Built-in Wardrobe -->
+  <rect x="565" y="215" width="110" height="25" fill="#e0e0d8" rx="2"/>
+  <line x1="565" y1="222" x2="675" y2="222" stroke="#ccc" stroke-width="0.5"/>
+  <circle cx="600" cy="228" r="1.5" fill="#999"/>
+  <circle cx="640" cy="228" r="1.5" fill="#999"/>
+  <text x="617" y="236" text-anchor="middle" font-family="Arial" font-size="7" fill="#555">WIR</text>
+
+  <!-- ===== BATHROOM (Bottom) ===== -->
+  <rect x="468" y="278" width="95" height="112" fill="#e8f0e8" rx="2"/>
+  <text x="515" y="300" text-anchor="middle" font-family="Oswald, sans-serif" font-size="11" font-weight="bold" fill="#283406">BATHROOM</text>
+
+  <!-- Shower -->
+  <rect x="476" y="310" width="36" height="36" fill="#d4e4d4" rx="2"/>
+  <circle cx="494" cy="316" r="3.5" fill="none" stroke="#999" stroke-width="1"/>
+  <circle cx="494" cy="316" r="1.5" fill="#999"/>
+  <text x="494" y="336" text-anchor="middle" font-family="Arial" font-size="6" fill="#555">SHOWER</text>
+
+  <!-- Toilet -->
+  <circle cx="515" cy="370" r="10" fill="none" stroke="#888" stroke-width="2"/>
+  <rect x="508" y="360" width="14" height="8" fill="#ddd" rx="3"/>
+  <text x="515" y="383" text-anchor="middle" font-family="Arial" font-size="6" fill="#555">WC</text>
+
+  <!-- Vanity -->
+  <rect x="476" y="362" width="24" height="18" fill="#d4ddc4" rx="2"/>
+  <circle cx="482" cy="371" r="2.5" fill="#bbb"/>
+  <text x="488" y="375" text-anchor="middle" font-family="Arial" font-size="5" fill="#555">VANITY</text>
+
+  <!-- ===== HALLWAY (Bottom-center) ===== -->
+  <rect x="573" y="278" width="75" height="112" fill="#f5f3ea" rx="2"/>
+  <text x="610" y="330" text-anchor="middle" font-family="Oswald, sans-serif" font-size="9" font-weight="bold" fill="#283406">HALL</text>
+
+  <!-- ===== BEDROOM 2 (Bottom-Right) ===== -->
+  <rect x="658" y="278" width="100" height="112" fill="#e6edf5" rx="2"/>
+  <text x="708" y="310" text-anchor="middle" font-family="Oswald, sans-serif" font-size="11" font-weight="bold" fill="#283406">BEDROOM 2</text>
+  <text x="708" y="326" text-anchor="middle" font-family="Arial" font-size="8" fill="#666">3.0m × 2.8m</text>
+
+  <!-- Single Bed -->
+  <rect x="688" y="335" width="50" height="42" fill="#d0dce8" rx="3"/>
+  <rect x="688" y="335" width="50" height="7" fill="#8E9E61" rx="2"/>
+  <rect x="694" y="342" width="16" height="10" fill="#fff" rx="2" opacity="0.7"/>
+  <text x="714" y="360" text-anchor="middle" font-family="Arial" font-size="6" fill="#666">SINGLE</text>
+
+  <!-- Desk -->
+  <rect x="665" y="290" width="18" height="40" fill="#c4b896" rx="1"/>
+  <text x="674" y="318" text-anchor="middle" font-family="Arial" font-size="6" fill="#555">DESK</text>
+
+  <!-- ===== DIMENSION LINES ===== -->
+
+  <!-- Top -->
+  <line x1="30" y1="80" x2="770" y2="80" stroke="#aaa" stroke-width="0.5" stroke-dasharray="3"/>
+  <line x1="30" y1="76" x2="30" y2="84" stroke="#aaa" stroke-width="1"/>
+  <line x1="770" y1="76" x2="770" y2="84" stroke="#aaa" stroke-width="1"/>
+  <text x="400" y="78" text-anchor="middle" font-family="Arial" font-size="9" fill="#888">9.1m (30ft)</text>
+
+  <!-- Left -->
+  <line x1="20" y1="90" x2="20" y2="400" stroke="#aaa" stroke-width="0.5" stroke-dasharray="3"/>
+  <line x1="16" y1="90" x2="24" y2="90" stroke="#aaa" stroke-width="1"/>
+  <line x1="16" y1="400" x2="24" y2="400" stroke="#aaa" stroke-width="1"/>
+  <text x="16" y="248" text-anchor="middle" font-family="Arial" font-size="9" fill="#888" transform="rotate(-90, 16, 248)">2.4m</text>
+
+  <!-- ===== SCALE BAR ===== -->
+  <g transform="translate(620, 430)">
+    <line x1="0" y1="0" x2="60" y2="0" stroke="#666" stroke-width="2"/>
+    <line x1="0" y1="-5" x2="0" y2="5" stroke="#666" stroke-width="1.5"/>
+    <line x1="30" y1="-5" x2="30" y2="5" stroke="#666" stroke-width="1.5"/>
+    <line x1="60" y1="-5" x2="60" y2="5" stroke="#666" stroke-width="1.5"/>
+    <rect x="0" y="-2" width="15" height="4" fill="#666"/>
+    <rect x="30" y="-2" width="15" height="4" fill="#fff"/>
+    <rect x="15" y="-2" width="15" height="4" fill="#fff"/>
+    <rect x="45" y="-2" width="15" height="4" fill="#666"/>
+    <text x="0" y="14" text-anchor="middle" font-family="Arial" font-size="7" fill="#666">0</text>
+    <text x="30" y="14" text-anchor="middle" font-family="Arial" font-size="7" fill="#666">0.5m</text>
+    <text x="60" y="14" text-anchor="middle" font-family="Arial" font-size="7" fill="#666">1.0m</text>
+  </g>
+
+  <!-- ===== LEGEND ===== -->
+  <g transform="translate(50, 430)">
+    <text x="0" y="0" font-family="Oswald, sans-serif" font-size="11" font-weight="bold" fill="#283406">LEGEND</text>
+    <rect x="0" y="8" width="16" height="6" fill="#c8dde8" stroke="#8E9E61" stroke-width="0.5"/>
+    <text x="20" y="14" font-family="Arial" font-size="8" fill="#666">Window</text>
+    <rect x="95" y="8" width="12" height="4" fill="#f7f5ef" stroke="#555" stroke-width="0.8"/>
+    <path d="M107,10 Q117,10 117,18" fill="none" stroke="#555" stroke-width="0.5" stroke-dasharray="2,1"/>
+    <text x="120" y="14" font-family="Arial" font-size="8" fill="#666">Door Swing</text>
+    <rect x="0" y="20" width="16" height="6" fill="#8E9E61" rx="1"/>
+    <text x="20" y="26" font-family="Arial" font-size="8" fill="#666">Furniture</text>
+  </g>
+
+  <text x="400" y="480" text-anchor="middle" font-family="Arial" font-size="8" fill="#999">This floor plan is indicative only. All measurements are approximate and subject to variation.</text>
+</svg>

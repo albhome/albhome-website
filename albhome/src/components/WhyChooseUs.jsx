@@ -1,0 +1,76 @@
+import { MapPin, Wrench, ClipboardCheck, DollarSign, Shield, Clock } from 'lucide-react'
+
+const benefits = [
+  {
+    icon: MapPin,
+    title: 'Local WA Expertise',
+    desc: 'Deep understanding of Western Australian building regulations, climate considerations, and local supplier networks to deliver projects that truly work for WA living.',
+  },
+  {
+    icon: Wrench,
+    title: 'Quality Workmanship',
+    desc: 'Our skilled team delivers exceptional craftsmanship on every project, using premium materials and proven techniques that stand the test of time.',
+  },
+  {
+    icon: ClipboardCheck,
+    title: 'Dedicated Project Management',
+    desc: 'End-to-end project oversight from initial consultation to final handover. We manage every detail so you can enjoy a stress-free building experience.',
+  },
+  {
+    icon: DollarSign,
+    title: 'Fair and Reasonable Pricing',
+    desc: 'Transparent, competitive pricing with no hidden costs. We deliver outstanding value without compromising on quality or service.',
+  },
+  {
+    icon: Shield,
+    title: 'Australian Standards Compliance',
+    desc: 'All our work meets or exceeds Australian building standards and regulations for complete peace of mind.',
+  },
+  {
+    icon: Clock,
+    title: 'Rapid Installation & Delivery',
+    desc: 'Streamlined processes and efficient project management ensure your build is completed on time, every time.',
+  },
+]
+
+export default function WhyChooseUs() {
+  return (
+    <section id="why-us" className="py-20 sm:py-28 bg-primary">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div className="text-center mb-4">
+          <span className="section-badge">
+            <Shield size={14} />
+            Why Choose ALB
+          </span>
+        </div>
+        <div className="text-center mb-16">
+          <h2 className="font-heading text-3xl sm:text-4xl lg:text-5xl font-bold text-white mt-4">
+            Why Choose Alb Home?
+          </h2>
+          <p className="text-white/50 max-w-2xl mx-auto mt-4 text-lg">
+            We deliver exceptional building solutions backed by experience, quality, and genuine care.
+          </p>
+        </div>
+
+        <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
+          {benefits.map((item) => (
+            <div
+              key={item.title}
+              className="bg-white/5 backdrop-blur-sm rounded-xl p-6 hover:bg-white/10 transition-all duration-300 border border-white/5"
+            >
+              <div className="flex items-start gap-4">
+                <div className="flex-shrink-0 w-10 h-10 rounded-lg bg-accent/15 text-accent flex items-center justify-center">
+                  <item.icon size={20} />
+                </div>
+                <div>
+                  <h3 className="font-heading font-semibold text-white">{item.title}</h3>
+                  <p className="text-white/50 text-sm mt-1.5 leading-relaxed">{item.desc}</p>
+                </div>
+              </div>
+            </div>
+          ))}
+        </div>
+      </div>
+    </section>
+  )
+}

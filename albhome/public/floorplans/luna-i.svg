@@ -1,0 +1,206 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1330 500" width="100%" height="100%">
+  <defs>
+    <style>
+      .bg-white { fill: #ffffff; }
+      .wall-ext { fill: none; stroke: #000; stroke-width: 3; stroke-linejoin: round; }
+      .wall-int { fill: none; stroke: #000; stroke-width: 2.5; }
+      .wall-thin { fill: none; stroke: #666; stroke-width: 1.2; }
+      .room-room { fill: #f5f5f5; }
+      .room-lv { fill: #f8f6f0; }
+      .room-bd { fill: #f0f4f8; }
+      .room-ba { fill: #f0f8f4; }
+      .room-en { fill: #fafafa; }
+      .rl { font-family: system-ui, sans-serif; font-size: 11px; fill: #000; font-weight: 600; text-anchor: middle; }
+      .rl-sm { font-family: system-ui, sans-serif; font-size: 7.5px; fill: #555; text-anchor: middle; }
+      .dl { font-family: system-ui, sans-serif; font-size: 7px; fill: #666; text-anchor: middle; }
+      .dn { stroke: #999; stroke-width: 0.5; stroke-dasharray: 2,2.5; }
+      .fr { fill: none; stroke: #888; stroke-width: 1; }
+      .frfl { fill: #e8e8e8; stroke: #888; stroke-width: 0.8; }
+      .dt { font-family: system-ui, sans-serif; font-size: 7.5px; fill: #222; font-weight: 700; letter-spacing: 1px; }
+      .di { font-family: system-ui, sans-serif; font-size: 6.5px; fill: #555; }
+      .dv { font-family: system-ui, sans-serif; font-size: 6.5px; fill: #000; font-weight: 600; text-anchor: end; }
+    </style>
+  </defs>
+
+  <!-- White background -->
+  <rect class="bg-white" x="0" y="0" width="1330" height="500" rx="4"/>
+
+  <!-- Building outline: 12,600 × 4,620 -->
+  <rect class="wall-ext" x="30" y="30" width="1260" height="432" rx="3"/>
+
+  <!-- ROOMS (left to right) -->
+
+  <!-- Entry/Porch: 1540mm = 154px -->
+  <rect x="32" y="32" width="152" height="428" class="room-en" rx="1"/>
+  <text class="rl" x="108" y="140">PORCH / ENTRY</text>
+
+  <!-- Living/Dining: 2940mm = 294px, x=184 -->
+  <rect x="184" y="32" width="294" height="428" class="room-lv" rx="1"/>
+  <text class="rl" x="331" y="145">LIVING</text>
+
+  <!-- Kitchen: ~4080mm = 408px, x=478 -->
+  <rect x="478" y="32" width="408" height="428" class="room-lv" rx="1"/>
+  <text class="rl" x="682" y="145">KITCHEN</text>
+
+  <!-- WC/Bathroom: ~2020mm = 202px, x=886 -->
+  <rect x="886" y="32" width="202" height="428" class="room-ba" rx="1"/>
+  <text class="rl" x="987" y="145">WC</text>
+
+  <!-- Bedroom: ~2000mm = 200px, x=1088 -->
+  <rect x="1088" y="32" width="200" height="428" class="room-bd" rx="1"/>
+  <text class="rl" x="1188" y="145">BEDROOM</text>
+
+  <!-- INTERNAL WALLS -->
+  <line class="wall-int" x1="184" y1="32" x2="184" y2="460"/>
+  <line class="wall-int" x1="478" y1="32" x2="478" y2="460"/>
+  <line class="wall-int" x1="886" y1="32" x2="886" y2="460"/>
+  <line class="wall-int" x1="1088" y1="32" x2="1088" y2="460"/>
+
+  <!-- DOORS -->
+  <!-- Entry door (bottom wall) -->
+  <path d="M 85,462 Q 85,410 120,410" class="wall-thin" fill="none"/>
+  <!-- Living room door -->
+  <path d="M 220,32 Q 220,60 250,60" class="wall-thin" fill="none"/>
+  <!-- Kitchen door -->
+  <path d="M 610,32 Q 610,60 640,60" class="wall-thin" fill="none"/>
+  <!-- WC door -->
+  <path d="M 920,32 Q 920,60 950,60" class="wall-thin" fill="none"/>
+  <!-- Bedroom door -->
+  <path d="M 1120,32 Q 1120,60 1150,60" class="wall-thin" fill="none"/>
+
+  <!-- FURNITURE -->
+
+  <!-- Entry: shelves on left wall -->
+  <rect class="frfl" x="34" y="50" width="6" height="150" rx="1"/>
+  <line class="wall-thin" x1="40" y1="80" x2="40" y2="150"/>
+  <line class="wall-thin" x1="40" y1="100" x2="40" y2="170"/>
+  <line class="wall-thin" x1="40" y1="120" x2="40" y2="190"/>
+  <line class="wall-thin" x1="34" y1="90" x2="40" y2="90"/>
+  <line class="wall-thin" x1="34" y1="110" x2="40" y2="110"/>
+  <line class="wall-thin" x1="34" y1="130" x2="40" y2="130"/>
+  <text class="rl-sm" x="42" y="110" text-anchor="start">Shelving</text>
+  <!-- Mat/bench -->
+  <rect class="frfl" x="140" y="390" width="36" height="30" rx="2"/>
+  <text class="rl-sm" x="158" y="408">Bench</text>
+
+  <!-- Living: Sofa (top area) -->
+  <rect class="frfl" x="210" y="55" width="80" height="45" rx="4"/>
+  <rect class="fr" x="210" y="55" width="80" height="16" rx="2"/>
+  <rect class="frfl" x="205" y="52" width="12" height="12" rx="2"/>
+  <rect class="frfl" x="273" y="52" width="12" height="12" rx="2"/>
+  <!-- Armchair right of sofa -->
+  <rect class="frfl" x="340" y="60" width="35" height="30" rx="3"/>
+  <text class="rl-sm" x="357" y="80">Sofa</text>
+
+  <!-- Living: Dining table (bottom area) -->
+  <rect class="frfl" x="260" y="318" width="75" height="45" rx="5"/>
+  <text class="rl-sm" x="297" y="346">Dining</text>
+  <!-- Chairs -->
+  <rect class="fr" x="265" y="363" width="12" height="10" rx="2"/>
+  <rect class="fr" x="318" y="363" width="12" height="10" rx="2"/>
+  <rect class="fr" x="265" y="308" width="12" height="10" rx="2"/>
+  <rect class="fr" x="318" y="308" width="12" height="10" rx="2"/>
+  <rect class="fr" x="245" y="330" width="10" height="12" rx="2"/>
+  <rect class="fr" x="340" y="330" width="10" height="12" rx="2"/>
+
+  <!-- Living: Coffee/center table -->
+  <rect class="frfl" x="240" y="220" width="40" height="25" rx="3"/>
+
+  <!-- Living: TV unit -->
+  <rect class="frfl" x="186" y="200" width="8" height="50" rx="1"/>
+
+  <!-- Kitchen: Counter on bottom wall -->
+  <rect class="frfl" x="480" y="435" width="395" height="25" rx="2"/>
+  <!-- Stove burners -->
+  <circle cx="510" cy="448" r="4.5" fill="#ddd"/>
+  <circle cx="535" cy="448" r="4.5" fill="#ddd"/>
+  <circle cx="560" cy="448" r="4.5" fill="#ddd"/>
+  <circle cx="585" cy="448" r="4.5" fill="#ddd"/>
+  <!-- Sink -->
+  <rect class="fr" x="740" y="438" width="50" height="18" rx="3"/>
+  <circle cx="752" cy="447" r="4" fill="#ddd"/>
+  <circle cx="778" cy="447" r="4" fill="#ddd"/>
+  <!-- Upper cabinets -->
+  <rect class="frfl" x="555" y="32" width="150" height="8" rx="1"/>
+  <rect class="frfl" x="750" y="32" width="125" height="8" rx="1"/>
+
+  <!-- Kitchen: Refrigerator on top wall -->
+  <rect class="frfl" x="490" y="32" width="45" height="50" rx="2"/>
+  <text class="rl-sm" x="512.5" y="65">Fridge</text>
+
+  <!-- Kitchen: Island -->
+  <rect class="frfl" x="610" y="330" width="60" height="80" rx="3"/>
+  <text class="rl-sm" x="640" y="375">Island</text>
+
+  <!-- WC: Shower (top) -->
+  <rect class="fr" x="895" y="55" width="55" height="55" rx="5"/>
+  <circle cx="922" cy="82" r="12" fill="#ddd"/>
+  <text class="rl-sm" x="922" y="80">Shower</text>
+  <!-- WC: Toilet (middle) -->
+  <rect class="fr" x="895" y="170" width="22" height="25" rx="3"/>
+  <circle cx="906" cy="187" r="6" fill="#ddd"/>
+  <text class="rl-sm" x="920" y="187">WC</text>
+  <!-- WC: Basin/Vanity (bottom) -->
+  <rect class="frfl" x="895" y="320" width="80" height="28" rx="3"/>
+  <text class="rl-sm" x="935" y="338">Vanity</text>
+
+  <!-- Bedroom: Bed (center) -->
+  <rect class="frfl" x="1105" y="65" width="60" height="85" rx="4"/>
+  <rect class="fr" x="1105" y="65" width="60" height="26" rx="2"/>
+  <rect class="frfl" x="1100" y="55" width="14" height="14" rx="2"/>
+  <rect class="frfl" x="1156" y="55" width="14" height="14" rx="2"/>
+  <text class="rl-sm" x="1135" y="150" text-anchor="middle">Bed</text>
+  <!-- Bedroom: Desk -->
+  <rect class="frfl" x="1130" y="380" width="45" height="30" rx="2"/>
+  <text class="rl-sm" x="1152" y="398">Desk</text>
+  <!-- Bedroom: Wardrobe -->
+  <rect class="fr" x="1090" y="200" width="8" height="80" rx="1"/>
+  <!-- Bedroom: Shelving -->
+  <rect class="frfl" x="1280" y="55" width="8" height="120" rx="1"/>
+  <line class="wall-thin" x1="1286" y1="80" x2="1286" y2="130"/>
+  <line class="wall-thin" x1="1280" y1="90" x2="1286" y2="90"/>
+  <line class="wall-thin" x1="1280" y1="110" x2="1286" y2="110"/>
+  <text class="rl-sm" x="1285" y="85" text-anchor="start">Wardrobe</text>
+
+  <!-- DIMENSION LINES -->
+
+  <!-- Top outer dimension -->
+  <line class="dn" x1="30" y1="18" x2="1290" y2="18"/>
+  <line class="dn" x1="30" y1="15" x2="30" y2="21"/>
+  <line class="dn" x1="1290" y1="15" x2="1290" y2="21"/>
+  <text class="dl" x="660" y="15">12,600mm</text>
+
+  <!-- Left vertical dimension -->
+  <line class="dn" x1="18" y1="30" x2="18" y2="462"/>
+  <line class="dn" x1="15" y1="30" x2="21" y2="30"/>
+  <line class="dn" x1="15" y1="462" x2="21" y2="462"/>
+  <text class="dl" x="15" y="250" transform="rotate(-90, 15, 250)">4,620mm</text>
+
+  <!-- Bottom outer dimension -->
+  <line class="dn" x1="30" y1="476" x2="1290" y2="476"/>
+  <line class="dn" x1="30" y1="473" x2="30" y2="479"/>
+  <line class="dn" x1="1290" y1="473" x2="1290" y2="479"/>
+  <text class="dl" x="660" y="473">12,600mm</text>
+
+  <!-- DIMENSIONS BOX (top-right) -->
+  <rect x="910" y="465" width="360" height="33" rx="3" fill="#f0f0f0" stroke="#ddd" stroke-width="0.8"/>
+  <text class="dt" x="928" y="478">DIMENSIONS</text>
+  <text class="di" x="928" y="490">Living &amp; Kitchen:</text><text class="dv" x="1265" y="490">20.6m²</text>
+  <text class="di" x="928" y="486" font-weight="600" fill="#1a1a1a">Total:</text><text class="dv" x="1265" y="486" font-weight="700" fill="#1a1a1a">58.21m²</text>
+
+  <!-- Scale bar -->
+  <line class="wall-int" x1="35" y1="488" x2="135" y2="488"/>
+  <line class="wall-thin" x1="35" y1="486" x2="35" y2="490"/>
+  <line class="wall-thin" x1="85" y1="486" x2="85" y2="490"/>
+  <line class="wall-thin" x1="135" y1="486" x2="135" y2="490"/>
+  <text class="dl" x="85" y="484">1m</text>
+
+  <!-- North arrow -->
+  <g transform="translate(1295, 20)">
+    <polygon points="0,-8 3.5,0 -3.5,0" fill="#666"/>
+    <text class="dl" x="0" y="-10" text-anchor="middle" font-weight="700" font-size="7">N</text>
+  </g>
+
+  <!-- Title -->
+  <text class="dt" x="35" y="14">LUNA I — Floor Plan</text>
+</svg>
